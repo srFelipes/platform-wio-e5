@@ -1,0 +1,34 @@
+{
+  "build": {
+    "core": "stm32",
+    "cpu": "cortex-m4",
+    "extra_flags": "-DSTM32WLxx -DSTM32WLE5xx",
+    "f_cpu": "32000000L",
+    "mcu": "stm32wle5jc",
+    "product_line": "STM32WLE5xx"
+  },
+  "debug": {
+    "default_tools": [
+      "stlink"
+    ],
+    "jlink_device": "STM32WLE5JC",
+    "onboard_tools": [
+      "stlink"
+    ],
+    "openocd_target": "stm32wlex",
+    "svd_path": "STM32WLE5x_CM4.svd"
+  },
+  "frameworks": [
+    "stm32cube"
+  ],
+  "name": "Wio E5",
+  "upload": {
+    "maximum_ram_size": 65536,
+    "maximum_size": 262144,
+    "protocol": "stlink",
+    "protocols": [
+      "stlink"
+    ]
+  },
+  "url": "https://wiki.seeedstudio.com/LoRa-E5_STM32WLE5JC_Module",
+  "vendor": "Seeedstudio"
